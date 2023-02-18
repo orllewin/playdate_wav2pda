@@ -1,6 +1,6 @@
 # Playdate: wav2pda
 
-The Playdate compiler converts .wav audio to .pda Playdate Audio files. If you tell the compiler to compile just a wav without Playdate project (eg. `pdc music.wav`) it'll still do the conversion process and package the converted .pda inside a .pdx directory, this utility just does that process and tidies up the files afterwards: `wav2pda music.wav`
+When you build a Playdate project the Playdate compiler converts .wav audio to .pda Playdate Audio files. If you tell the compiler to compile just a wav without a Playdate project (eg. `pdc music.wav`) it'll still do the conversion process and package the converted .pda inside a .pdx directory, this utility does that process and tidies up the files afterwards: `wav2pda music.wav`
 
 The idea is you can edit samples on your computer then add the converted .pda to the data directory of [Tape Looper](https://orllewin.github.io/playdate/tape_looper/) or other future audio projects.
 
