@@ -4,18 +4,8 @@ const fs = require('fs')
 const execSync = require('child_process').execSync
 
 log("")
-log("    :::       :::    :::    :::     ::: :::::::: ::::::::: ::::::::::::::::::::")
-log("   :+:       :+:  :+: :+:  :+:     :+::+:    :+::+:    :+::+:    :+:   :+:")
-log("  +:+       +:+ +:+   +:+ +:+     +:+      +:+ +:+    +:++:+    +:+   +:+")
-log(" +#+  +:+  +#++#++:++#++:+#+     +:+    +#+   +#++:++#+ +#+    +:+   +#+")
-log("+#+ +#+#+ +#++#+     +#+ +#+   +#+   +#+     +#+       +#+    +#+   +#+")
-log("#+#+# #+#+# #+#     #+#  #+#+#+#   #+#      #+#       #+#    #+#   #+#")
-log("###   ###  ###     ###    ###    #############       ####################")
+log("Playdate wav2pda - converts Linear PCM .wav files to .pda")
 log("")
-log("Playdate wav2pdi - converts Linear PCM .wav files to .pda")
-log("")
-
-execSync("sleep 1")
 
 if(process.argv.length == 2){
   log("Missing file argument")
@@ -41,8 +31,6 @@ const wavbytes = Uint8Array.from(filebuffer)
 
 const percentbyte = (element) => element == 37//dec 37 == 0x25
 const percindex = wavbytes.findIndex(percentbyte)
-
-//log("First % symbol index: " + percindex)
 
 const wavdata = wavbytes.slice(percindex)
 const pdaprefix = Uint8Array.from([80, 108, 97, 121, 100, 97, 116, 101, 32, 65, 85, 68, 68, -84, 0, 2, 44, 0, -33, -1, -79, -1, -90, -1, -66, -1, -25, -1, 13, 0])
