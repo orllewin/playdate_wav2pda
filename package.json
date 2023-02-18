@@ -1,0 +1,20 @@
+{
+  "name": "wav2pdi",
+  "version": "1.0.0",
+  "description": "Convert wav files to Playdate pdi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "playdate"
+  ],
+  "author": "Orllewin",
+  "license": "ISC",
+  "bin": {
+    "wav2pdi": "./bin/index.js"
+  },
+  "dependencies": {
+    "convert-string": "^0.1.0"
+  }
+}
