@@ -12,7 +12,7 @@
   "author": "Orllewin",
   "license": "ISC",
   "bin": {
-    "wav2pdi": "./bin/index.js"
+    "wav2pda": "./bin/index.js"
   },
   "dependencies": {
     "convert-string": "^0.1.0"
